@@ -10,6 +10,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>a-without-aop</module>
+        <module>b-with-aop</module>
+        <module>c-pointcut-syntax</module>
+        <module>proxy-patterns</module>
     </modules>
 
     <properties>
