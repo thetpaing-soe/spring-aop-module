@@ -17,6 +17,7 @@ public class Main {
         MyCurrencyService myCurrencyService = context.getBean(MyCurrencyService.class);
 
         currencyService.changeExchangeRate(1000);
+        currencyService.doSomething();
         algoCurrencyService.changeRateTo(3000, CurrencyType.US);
 
         myCurrencyService.loadCurrency(600);

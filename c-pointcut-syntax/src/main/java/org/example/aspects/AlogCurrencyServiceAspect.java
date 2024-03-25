@@ -12,6 +12,7 @@ import java.util.Arrays;
 public class AlogCurrencyServiceAspect {
 
 //    @Before("target(org.example.service.AlgoCurrencyService)")
+    @Before("execution(* org.example.service.*.*(..))")
     public void beforeCurrencyAdvice(JoinPoint joinPoint) {
         System.out.println("%s method invoked before with %s.".formatted(joinPoint.getSignature().getName(), Arrays.toString(joinPoint.getArgs())));
     }

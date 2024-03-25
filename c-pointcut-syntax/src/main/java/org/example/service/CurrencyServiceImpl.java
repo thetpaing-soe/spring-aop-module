@@ -7,6 +7,15 @@ import org.springframework.stereotype.Component;
 public class CurrencyServiceImpl implements CurrencyService {
     @Override
     public void changeExchangeRate(double rate) {
+        doSomething();
+    }
+
+    @Override
+    public void doSomething() {
+
+    }
+
+    public void doSomethingExtra() {
 
     }
 }
